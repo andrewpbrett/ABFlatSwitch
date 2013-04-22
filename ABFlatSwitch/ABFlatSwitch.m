@@ -424,7 +424,8 @@
 {
 	if (newOnText != onText)
 	{
-		self.toggleLayer.onString = newOnText;
+		onText = [newOnText copy];
+		self.toggleLayer.onString = onText;
 		[self.toggleLayer setNeedsDisplay];
 	}
 }
@@ -433,7 +434,8 @@
 {
 	if (newOffText != offText)
 	{
-		self.toggleLayer.offString = newOffText;
+		offText = [newOffText copy];
+		self.toggleLayer.offString = offText;
 		[self.toggleLayer setNeedsDisplay];
 	}
 }
