@@ -380,7 +380,6 @@
 {
 	if (anOnTintColor != onTintColor)
 	{
-		onTintColor = [anOnTintColor copy];
 		self.toggleLayer.onTintColor = anOnTintColor;
 		[self.toggleLayer setNeedsDisplay];
 	}
@@ -390,7 +389,6 @@
 {
     if (anOffTintColor != offTintColor)
         {
-            offTintColor = [anOffTintColor copy];
             toggleLayer.offTintColor = anOffTintColor;
             [toggleLayer setNeedsDisplay];
         }
@@ -426,8 +424,7 @@
 {
 	if (newOnText != onText)
 	{
-		onText = [newOnText copy];
-		self.toggleLayer.onString = onText;
+		self.toggleLayer.onString = newOnText;
 		[self.toggleLayer setNeedsDisplay];
 	}
 }
@@ -436,8 +433,7 @@
 {
 	if (newOffText != offText)
 	{
-		offText = [newOffText copy];
-		self.toggleLayer.offString = offText;
+		self.toggleLayer.offString = newOffText;
 		[self.toggleLayer setNeedsDisplay];
 	}
 }
@@ -446,8 +442,7 @@
 {
 	if (newLabelFont != labelFont)
 	{
-		labelFont = [newLabelFont copy];
-		self.toggleLayer.labelFont = labelFont;
+		self.toggleLayer.labelFont = newLabelFont;
 		[self.toggleLayer setNeedsDisplay];
 	}
 }
@@ -456,8 +451,7 @@
 {
 	if (newLabelColor != labelColor)
 	{
-		labelColor = [newLabelColor copy];
-		self.toggleLayer.labelColor = labelColor;
+		self.toggleLayer.labelColor = newLabelColor;
 		[self.toggleLayer setNeedsDisplay];
 	}	
 }
